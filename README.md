@@ -70,22 +70,22 @@ The analysis scripts are intended to be run in the following order:
 2. `02_coverage_HWE_filtering.R`
    SNP filtering based on sequencing depth, linkage disequilibrium, and Hardy–Weinberg equilibrium.
 
-3. `01_RDA_selection.R`
+3. `03_RDA_selection.R`
    Redundancy analysis (RDA) to identify candidate SNPs associated with pH variation.
 
-4. `02_PCA.R`
+4. `04_PCA.R`
    Principal component analysis of neutral and candidate-SNP datasets.
 
-5. `03_FST.R`
+5. `05_FST.R`
    Pairwise F<sub>ST</sub> estimation among sampling sites.
 
-6. `04_HoHeFis.R`
+6. `06_HoHeFis.R`
    Estimation of observed heterozygosity (H<sub>O</sub>), expected heterozygosity (H<sub>E</sub>), and F<sub>IS</sub>.
 
-7. `05_STRUCTURE_pipeline.sh`
+7. `07_STRUCTURE_pipeline.sh`
    Bayesian population structure analysis using STRUCTURE.
 
-8. `06_topGO_genpop.R`
+8. `08_topGO_genpop.R`
    Gene Ontology enrichment analysis of genes containing candidate SNPs associated with selection.
 
 ### B. Transcriptomics
@@ -96,13 +96,13 @@ RNA-seq preprocessing, including quality control, trimming, contaminant filterin
 
 The downstream analyses are performed in the following order:
 
-1. `01_DESeq2.R`
+1. `09_DESeq2.R`
    Differential gene expression analysis using DESeq2.
 
-2. `02_topGO_RNA.R`
+2. `10_topGO_RNA.R`
    Gene Ontology enrichment analysis of up- and down-regulated differentially expressed genes.
 
-3. `03_WGCNA.R`
+3. `11_WGCNA.R`
    Weighted gene co-expression network analysis and module–trait correlation analyses.
 
 Each script includes header comments specifying the required input files and generated outputs.
