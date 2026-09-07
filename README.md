@@ -54,7 +54,7 @@ The three focal contrasts were:
 ## Analysis workflow
 
 The repository is organized into population genomic and transcriptomic workflows.
-![Workflow of the RNA-seq analysis](images/workflow.png)
+![RNA-seq workflow](workflow.png)
 
 ### A. Population genomics
 
